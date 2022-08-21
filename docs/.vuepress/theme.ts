@@ -66,9 +66,9 @@ export default hopeTheme({
        */
       provider: "Giscus",
       repo: "Buzhifanji/algorithms",
-      repoId: "R_kgDOHoXcbA",
+      repoId: "R_kgDOH2thpQ",
       category: "Announcements",
-      categoryId: "DIC_kwDOHoXcbM4CQb_S",
+      categoryId: "DIC_kwDOH2thpc4CQ8rs",
 
       /**
        * Using Twikoo
