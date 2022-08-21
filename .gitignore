@@ -1,0 +1,7 @@
+node_modules
+.temp
+.cache
+pnpm-lock.yaml
+docs/.vuepress/dist
+yarn.lock
+yarn-error.log
