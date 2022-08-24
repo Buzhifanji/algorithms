@@ -11,11 +11,11 @@
     "test": "ava"
   },
   "devDependencies": {
-    "@vuepress/client": "^2.0.0-beta.49",
+    "@vuepress/client": "^2.0.0-beta.50",
     "@vuepress/plugin-search": "2.0.0-beta.49",
-    "vue": "^3.2.36",
-    "vuepress": "^2.0.0-beta.49",
-    "vuepress-theme-hope": "^2.0.0-beta.87",
-    "ava": "^4.3.1"
+    "ava": "^4.3.1",
+    "vue": "^3.2.37",
+    "vuepress": "^2.0.0-beta.50",
+    "vuepress-theme-hope": "^2.0.0-beta.91"
   }
 }
