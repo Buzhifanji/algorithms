@@ -13,7 +13,7 @@ export function insertionSort(
   customComparator = defaultCompare
 ) {
   const result = [...originalArray];
-  for (let i = 0; i < result.length; i++) {
+  for (let i = 1; i < result.length; i++) {
     let prevIndex = i - 1;
     // 当前需要排序的元素
     const currentElement = result[i];
