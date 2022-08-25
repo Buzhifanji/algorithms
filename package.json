@@ -2,7 +2,6 @@
   "name": "algorithms",
   "version": "1.0.0",
   "description": "算法导论与JavaScript实现",
-  "type": "module",
   "license": "MIT",
   "scripts": {
     "build": "vuepress build docs",
