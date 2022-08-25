@@ -2,6 +2,7 @@ node_modules
 .temp
 .cache
 pnpm-lock.yaml
+package-lock.json
 docs/.vuepress/dist
 yarn.lock
 yarn-error.log
