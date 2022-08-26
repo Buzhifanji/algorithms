@@ -25,3 +25,19 @@ export function insertionSortNotUp(
   }
   return result;
 }
+
+/**
+ * 习题1-3
+ * @param {*} array
+ * @param {*} v
+ * @returns
+ */
+export function linearSearch(array, v) {
+  let result = null;
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] === v) {
+      result = i;
+    }
+  }
+  return result;
+}
