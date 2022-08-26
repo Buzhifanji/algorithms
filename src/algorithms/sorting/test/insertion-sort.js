@@ -1,5 +1,9 @@
 import test from "ava";
-import { insertionSortNotUp, linearSearch } from "../exercise/exercise-1.js";
+import {
+  addBinary,
+  insertionSortNotUp,
+  linearSearch,
+} from "../exercise/exercise-1.js";
 import { insertionSort } from "../insertion-sort.js";
 
 test("insertion-sort", (t) => {
@@ -16,4 +20,12 @@ test("linearSearch", (t) => {
   t.is(linearSearch([1, 2, 3, 4, 5, 6], 2), 1);
   t.is(linearSearch([1, 2, 3, 4, 5, 6], 5), 4);
   t.is(linearSearch([1, 2, 3, 4, 5, 6], 7), null);
+});
+
+test("addBinary", (t) => {
+  t.deepEqual(addBinary([1, 1, 1, 1], [0, 0, 1, 1]), [1, 0, 0, 1, 0]);
+  t.deepEqual(
+    addBinary([1, 1, 1, 0, 1, 0, 1], [1, 0, 0, 1, 1, 0, 1]),
+    [1, 1, 0, 0, 0, 0, 1, 0]
+  );
 });

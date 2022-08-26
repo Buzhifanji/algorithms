@@ -41,3 +41,35 @@ export function linearSearch(array, v) {
   }
   return result;
 }
+
+/**
+ * 习题1-4
+ * @param {*array} bin1
+ * @param {*array} bin2
+ * @returns {*array}
+ */
+export function addBinary(bin1, bin2) {
+  const n = bin1.length > bin2.length ? bin1.length : bin2.length;
+  const result = new Array(n + 1);
+  let flag = false;
+  for (let i = n - 1; i >= 0; i--) {
+    const item1 = bin1[i] ? bin1[i] : 0;
+    const item2 = bin2[i] ? bin2[i] : 0;
+    const sum = flag ? item1 + item2 + 1 : item1 + item2;
+    // 满二进一
+    if (sum === 2) {
+      result[i + 1] = 0;
+      flag = true;
+    } else if (sum === 3) {
+      result[i + 1] = 1;
+      flag = true;
+    } else {
+      result[i + 1] = sum;
+      flag = false;
+    }
+  }
+  if (flag) {
+    result[0] = 1;
+  }
+  return result;
+}
